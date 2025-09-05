@@ -15,7 +15,7 @@
                     últimas regulaciones y novedades en construcción en seco.
                 </p>
             </div>
-            <DefaultButton to="#" class="flex items-center gap-2.5 border border-dark">
+            <DefaultButton to="#" class="flex items-center gap-2.5 hover:bg-dark border border-dark hover:text-white">
                 Aprender
                 <Icon name="material-symbols:keyboard-arrow-down" class="w-6 h-6 flex-shrink-0" />
             </DefaultButton>

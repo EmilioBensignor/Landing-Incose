@@ -6,7 +6,7 @@
                 <HeadingH2 class="text-center">¿Aún tenés preguntas?</HeadingH2>
                 <p class="text-center">Estamos aca para ayudarte con cualquier consulta</p>
             </div>
-            <DefaultButton class="bg-primary text-dark">Contacto</DefaultButton>
+            <DefaultButton class="bg-primary hover:bg-dark text-dark hover:text-primary">Contacto</DefaultButton>
         </div>
     </DefaultSection>
 </template>

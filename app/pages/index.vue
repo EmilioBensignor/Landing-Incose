@@ -7,6 +7,7 @@
             <HomeAnexo />
             <HomeFAQs />
             <HomePreguntas />
+            <HomeNewsletter />
         </div>
     </DefaultMain>
 </template>

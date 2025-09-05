@@ -38,7 +38,7 @@
                         <FormError v-if="errors.email">{{ errors.email }}</FormError>
                     </div>
                 </div>
-                <DefaultButton type="submit" class="bg-dark text-white">
+                <DefaultButton type="submit" class="bg-dark hover:bg-white text-white hover:text-dark">
                     Descargar anexo
                 </DefaultButton>
             </form>

@@ -14,7 +14,7 @@
                     seguridad ni el futuro de tu obra.
                 </p>
             </div>
-            <DefaultButton class="bg-primary text-dark">Descargá los puntos clave</DefaultButton>
+            <DefaultButton class="bg-primary hover:bg-dark text-dark hover:text-primary">Descargá los puntos clave</DefaultButton>
         </div>
     </DefaultSection>
 </template>
