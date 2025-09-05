@@ -1,13 +1,13 @@
 <template>
     <DefaultSection class="md:flex-row-reverse md:!gap-0 bg-primary">
         <div class="md:w-1/2 flex flex-col gap-6 md:gap-12 py-16 lg:py-20 xxl:py-24 px-5 md:px-12 lg:px-16 xxl:px-20">
-            <div class="flex flex-col gap-5 lg:gap-8">
+            <div class="flex flex-col gap-5 lg:gap-8 fade-up">
                 <HeadingH2>Accedé al anexo de la resolución 236/2024</HeadingH2>
                 <p class="lg:text-xl">
                     Completá el siguiente formulario con tus datos personales para acceder al anexo oficial.
                 </p>
             </div>
-            <form @submit.prevent="handleSubmit" class="w-full flex flex-col gap-8">
+            <form @submit.prevent="handleSubmit" class="w-full flex flex-col gap-8 fade-up">
                 <div class="flex flex-col gap-4 lg:gap-6">
                     <div class="flex flex-col gap-2">
                         <label for="nombre" class="lg:text-xl font-bold text-dark">
@@ -50,6 +50,8 @@
 </template>
 
 <script setup>
+useFadeUp();
+
 const form = ref({
     nombre: '',
     apellido: '',
