@@ -1,8 +1,10 @@
 <template>
-    <DefaultSection class="py-16 px-5">
-        <HeadingH2>Preguntas frecuentes</HeadingH2>
-        <div class="flex flex-col gap-4">
-            <FaqAccordion v-for="(faq, index) in faqs" :key="index" :faq="faq" />
+    <DefaultSection class="py-16 px-5 md:px-12">
+        <div class="w-full max-w-[1280px] flex flex-col items-center gap-6 md:gap-12 xxl:gap-16 mx-auto">
+            <HeadingH2 class="md:w-full">Preguntas frecuentes</HeadingH2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-y-6 lg:gap-x-16 xxl:gap-y-10 xxl:gap-x-20">
+                <FaqAccordion v-for="(faq, index) in faqs" :key="index" :faq="faq" />
+            </div>
         </div>
     </DefaultSection>
 </template>

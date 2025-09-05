@@ -1,7 +1,7 @@
 <template>
-    <div class="border-b border-dark pb-3">
-        <button @click="isOpen = !isOpen" class="w-full flex justify-between items-center gap-6 pb-3 md:pb-4">
-            <p class="text-left font-bold">{{ faq.pregunta }}</p>
+    <div class="border-b border-dark">
+        <button @click="isOpen = !isOpen" class="w-full flex justify-between items-center gap-6 pb-3 md:pb-4 lg:pb-5">
+            <p class="text-left lg:text-xl font-bold">{{ faq.pregunta }}</p>
             <span
                 class="w-6 h-6 flex justify-center items-center flex-shrink-0 transition duration-300"
                 :class="{ 'rotate-180': isOpen }">
@@ -14,7 +14,7 @@
             :class="isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
             <div class="overflow-hidden">
                 <div class="pb-3 md:pb-4">
-                    <p class="text-sm font-semibold">{{ faq.respuesta }}</p>
+                    <p class="text-sm lg:text-base font-semibold">{{ faq.respuesta }}</p>
                 </div>
             </div>
         </div>
