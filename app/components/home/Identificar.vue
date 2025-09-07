@@ -1,5 +1,5 @@
 <template>
-    <DefaultSection class="bg-dark text-white py-16 lg:py-20 px-5 md:px-12 lg:px-16">
+    <DefaultSection id="identificar" class="bg-dark text-white py-16 lg:py-20 px-5 md:px-12 lg:px-16">
         <div class="w-full max-w-[1280px] flex flex-col items-center gap-6 md:gap-12 xxl:gap-16 mx-auto">
             <div class="w-full flex flex-col gap-5 lg:gap-8 fade-up">
                 <HeadingH2 class="md:flex md:flex-col text-primary">
@@ -11,7 +11,7 @@
                     fabricación.
                 </p>
             </div>
-            <div class="w-full grid lg:flex md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 xxl:gap-20">
+            <div class="w-full grid lg:flex md:grid-cols-2 gap-6 md:gap-12 lg:gap-16 xxl:gap-40">
                 <ul class="flex flex-col justify-between gap-6 md:gap-8">
                     <li v-for="(caracteristica, index) in caracteristicas.slice(0, Math.ceil(caracteristicas.length / 2))"
                         :key="index" class="flex gap-1.5 lg:text-[1.125rem] fade-up">

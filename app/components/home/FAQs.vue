@@ -3,7 +3,12 @@
         <div class="w-full max-w-[1280px] flex flex-col items-center gap-6 md:gap-12 xxl:gap-16 mx-auto">
             <HeadingH2 class="md:w-full fade-up">Preguntas frecuentes</HeadingH2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-y-6 lg:gap-x-16 xxl:gap-y-10 xxl:gap-x-20">
-                <FaqAccordion v-for="(faq, index) in faqs" :key="index" :faq="faq" class="fade-up" />
+                <div class="flex flex-col gap-4 lg:gap-6 xxl:gap-10">
+                    <FaqAccordion v-for="(faq, index) in faqs.slice(0, 2)" :key="index" :faq="faq" class="fade-up" />
+                </div>
+                <div class="flex flex-col gap-4 lg:gap-6 xxl:gap-10">
+                    <FaqAccordion v-for="(faq, index) in faqs.slice(2, 4)" :key="index + 2" :faq="faq" class="fade-up" />
+                </div>
             </div>
         </div>
     </DefaultSection>

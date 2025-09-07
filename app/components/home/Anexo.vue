@@ -43,8 +43,8 @@
                 </DefaultButton>
             </form>
         </div>
-        <div class="md:w-1/2">
-            <NuxtImg src="/images/home/Anexo-resolucion-236-2024.jpg" alt="Anexo resolución 236/2024" class="w-full h-[22.5rem] md:h-[44.25rem] lg:h-[50rem]" />
+        <div class="w-full md:w-1/2">
+            <NuxtImg src="/images/home/Anexo-resolucion-236-2024.jpg" alt="Anexo resolución 236/2024" class="w-full h-[22.5rem] md:h-[44.25rem] lg:h-[50rem] object-cover" />
         </div>
     </DefaultSection>
 </template>

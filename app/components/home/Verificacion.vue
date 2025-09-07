@@ -15,12 +15,13 @@
                     últimas regulaciones y novedades en construcción en seco.
                 </p>
             </div>
-            <DefaultButton to="#" class="flex items-center gap-2.5 hover:bg-dark border border-dark hover:text-white fade-up">
+            <DefaultButton @click="scrollToIdentificar"
+                class="flex items-center gap-2.5 hover:bg-dark border border-dark hover:text-white cursor-pointer">
                 Aprender
                 <Icon name="material-symbols:keyboard-arrow-down" class="w-6 h-6 flex-shrink-0" />
             </DefaultButton>
         </div>
-        <div class="flex md:w-1/2">
+        <div class="w-full flex md:w-1/2">
             <NuxtImg src="/images/home/Identifica-facilmente-con-QR.jpg" alt="Identificá fácilmente con QR"
                 class="w-full h-[20.75rem] md:h-[36rem] lg:h-[38.25rem] xxl:h-[37.5rem] object-cover" />
         </div>
@@ -28,5 +29,23 @@
 </template>
 
 <script setup>
-    useFadeUp()
+useFadeUp()
+
+const scrollToIdentificar = () => {
+    const identificarSection = document.getElementById('identificar')
+    if (identificarSection) {
+        // Fixed header heights: mobile-1080px = 76px, desktop = 140px
+        const headerHeight = window.innerWidth >= 1080 ? 140 : 76
+        
+        // Get position relative to document, accounting for sticky elements
+        const rect = identificarSection.getBoundingClientRect()
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        const elementTop = rect.top + scrollTop
+        
+        window.scrollTo({
+            top: elementTop - headerHeight,
+            behavior: 'smooth'
+        })
+    }
+}
 </script>
