@@ -1,5 +1,6 @@
 export const ROUTE_NAMES = {
     HOME: "/",
+    ARTICULOS: "/articulos",
     REDES: {
         INSTAGRAM: "https://www.instagram.com",
         FACEBOOK: "https://www.facebook.com",
