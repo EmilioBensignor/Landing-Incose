@@ -9,11 +9,27 @@
                 <p class="max-w-56 lg:max-w-full text-center lg:text-xl">Estamos aca para ayudarte con cualquier
                     consulta</p>
             </div>
-            <DefaultButton class="bg-primary hover:bg-dark text-dark hover:text-primary fade-up">Contacto</DefaultButton>
+            <DefaultButton @click="scrollToFooter" class="bg-primary hover:bg-dark text-dark hover:text-primary cursor-pointer fade-up">Contacto</DefaultButton>
         </div>
     </DefaultSection>
 </template>
 
 <script setup>
 useFadeUp();
+
+const scrollToFooter = () => {
+    const footerSection = document.getElementById('footer')
+    if (footerSection) {
+        const headerHeight = window.innerWidth >= 1080 ? 140 : 76
+        
+        const rect = footerSection.getBoundingClientRect()
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        const elementTop = rect.top + scrollTop
+        
+        window.scrollTo({
+            top: elementTop - headerHeight,
+            behavior: 'smooth'
+        })
+    }
+}
 </script>

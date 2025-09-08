@@ -1,5 +1,5 @@
 <template>
-    <DefaultSection class="md:flex-row-reverse md:!gap-0 bg-primary">
+    <DefaultSection id="anexo" class="md:flex-row-reverse md:!gap-0 bg-primary">
         <div class="md:w-1/2 flex flex-col gap-6 md:gap-12 py-16 lg:py-20 xxl:py-24 px-5 md:px-12 lg:px-16 xxl:px-20">
             <div class="flex flex-col gap-5 lg:gap-8 fade-up">
                 <HeadingH2>Accedé al anexo de la resolución 236/2024</HeadingH2>

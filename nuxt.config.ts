@@ -50,7 +50,7 @@ export default defineNuxtConfig({
   },
   icon: {
     provider: 'iconify',
-    collections: ['material-symbols']
+    collections: ['material-symbols', 'simple-icons']
   },
   supabase: {
     redirect: false,

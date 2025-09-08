@@ -11,8 +11,26 @@
                 Conocé más sobre la nueva <span class="text-primary">Resolución 236/2024</span>. No arriesgues la
                 seguridad ni el futuro de tu obra.
             </p>
-            <DefaultButton class="bg-primary hover:bg-dark text-dark hover:text-primary">Descargá los puntos clave
+            <DefaultButton @click="scrollToAnexo" class="bg-primary hover:bg-dark text-dark hover:text-primary cursor-pointer">Descargá los puntos clave
             </DefaultButton>
         </div>
     </DefaultSection>
 </template>
+
+<script setup>
+const scrollToAnexo = () => {
+    const anexoSection = document.getElementById('anexo')
+    if (anexoSection) {
+        const headerHeight = window.innerWidth >= 1080 ? 140 : 76
+        
+        const rect = anexoSection.getBoundingClientRect()
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        const elementTop = rect.top + scrollTop
+        
+        window.scrollTo({
+            top: elementTop - headerHeight,
+            behavior: 'smooth'
+        })
+    }
+}
+</script>

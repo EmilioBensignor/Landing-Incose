@@ -8,9 +8,8 @@
             <nav>
                 <ul class="flex items-center gap-3">
                     <li v-for="(red, index) in redes" :key="index">
-                        <NuxtLink :to="red.route">
-                            <NuxtImg :src="`/images/redes/${red.name}.svg`" :alt="`Logo ${red.name}`"
-                                class="w-6 h-6 object-contain" />
+                        <NuxtLink :to="red.route" class="text-white hover:text-primary transition-colors duration-300" target="_blank" rel="noopener">
+                            <Icon :name="`simple-icons:${red.icon}`" class="w-6 h-6" />
                         </NuxtLink>
                     </li>
                 </ul>

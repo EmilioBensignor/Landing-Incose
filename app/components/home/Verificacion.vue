@@ -34,10 +34,8 @@ useFadeUp()
 const scrollToIdentificar = () => {
     const identificarSection = document.getElementById('identificar')
     if (identificarSection) {
-        // Fixed header heights: mobile-1080px = 76px, desktop = 140px
         const headerHeight = window.innerWidth >= 1080 ? 140 : 76
         
-        // Get position relative to document, accounting for sticky elements
         const rect = identificarSection.getBoundingClientRect()
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop
         const elementTop = rect.top + scrollTop
