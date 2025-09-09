@@ -45,8 +45,14 @@
             </form>
         </div>
         <div class="w-full md:w-1/2">
-            <NuxtImg src="/images/home/Anexo-resolucion-236-2024.jpg" alt="Anexo resolución 236/2024"
-                class="w-full h-[22.5rem] md:h-[44.25rem] lg:h-[50rem] object-cover" />
+            <picture class="w-full">
+                <source media="(min-width: 1440px)"
+                    srcset="/images/home/anexo/Anexo-resolucion-236-2024-Desktop-XL.webp">
+                <source media="(min-width: 1080px)" srcset="/images/home/anexo/Anexo-resolucion-236-2024-Desktop.webp">
+                <source media="(min-width: 768px)" srcset="/images/home/anexo/Anexo-resolucion-236-2024-Tablet.webp">
+                <img src="/images/home/anexo/Anexo-resolucion-236-2024-Mobile.webp" alt="Anexo resolución 236/2024"
+                    class="w-full h-[22.5rem] sm:h-[34rem] md:h-[44.25rem] lg:h-[50rem] object-cover">
+            </picture>
         </div>
     </DefaultSection>
 
@@ -61,7 +67,8 @@
                             <Icon name="material-symbols:cancel-outline" class="w-6 h-6" />
                         </button>
                         <div class="flex flex-col items-center gap-3 md:gap-4 text-center">
-                            <p class="text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xxl:text-[3rem] text-dark font-bold">
+                            <p
+                                class="text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xxl:text-[3rem] text-dark font-bold">
                                 Ya puedes acceder al anexo de la resolución 236/2024
                             </p>
                             <DefaultButton @click="downloadPDF"

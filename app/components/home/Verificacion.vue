@@ -22,8 +22,13 @@
             </DefaultButton>
         </div>
         <div class="w-full flex md:w-1/2">
-            <NuxtImg src="/images/home/Identifica-facilmente-con-QR.jpg" alt="Identificá fácilmente con QR"
-                class="w-full h-[20.75rem] md:h-[36rem] lg:h-[38.25rem] xxl:h-[37.5rem] object-cover" />
+            <picture class="w-full">
+                <source media="(min-width: 1440px)" srcset="/images/home/identifica/Identifica-facilmente-con-QR-Desktop-XL.webp">
+                <source media="(min-width: 1080px)" srcset="/images/home/identifica/Identifica-facilmente-con-QR-Desktop.webp">
+                <source media="(min-width: 768px)" srcset="/images/home/identifica/Identifica-facilmente-con-QR-Tablet.webp">
+                <img src="/images/home/identifica/Identifica-facilmente-con-QR-Mobile.webp" alt="Identificá fácilmente con QR"
+                    class="w-full h-[20.75rem] sm:h-[30rem] md:h-[36rem] lg:h-[38.25rem] xxl:h-[37.5rem] object-cover">
+            </picture>
         </div>
     </DefaultSection>
 </template>
@@ -35,11 +40,11 @@ const scrollToIdentificar = () => {
     const identificarSection = document.getElementById('identificar')
     if (identificarSection) {
         const headerHeight = window.innerWidth >= 1080 ? 140 : 76
-        
+
         const rect = identificarSection.getBoundingClientRect()
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop
         const elementTop = rect.top + scrollTop
-        
+
         window.scrollTo({
             top: elementTop - headerHeight,
             behavior: 'smooth'
