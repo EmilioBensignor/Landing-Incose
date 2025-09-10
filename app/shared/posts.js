@@ -1,7 +1,7 @@
 const posts = [
     {
         slug: "nuevas-regulaciones-para-perfiles-de-acero",
-        img: '/images/Placeholder.png',
+        img: '/images/contenidos/nuevas-regulaciones.webp',
         categoria: 'Anuncios',
         titulo: 'Nuevas regulaciones para perfiles de acero',
         subtitulo: 'Construcción en seco y el Steel Framing.- Cuidá tu obra y tu reputación',
@@ -16,7 +16,7 @@ const posts = [
     },
     {
         slug: "los-peligros-de-los-perfiles-no-certificados",
-        img: '/images/Placeholder.png',
+        img: '/images/contenidos/los-peligros-de-los-perfiles-no-certificados.webp',
         categoria: 'Prevención',
         titulo: 'Los peligros de los perfiles NO certificados',
         subtitulo: 'Conocé los riesgos y evitá complicaciones en tu obra. La seguridad no se negocia.',
@@ -32,7 +32,7 @@ const posts = [
     },
     {
         slug: "lo-que-tenes-que-saber-sobre-los-perfiles-certificados",
-        img: '/images/Placeholder.png',
+        img: '/images/contenidos/lo-que-tenes-que-saber-sobre-perfiles-certificados.webp',
         categoria: 'Beneficios',
         titulo: 'Lo que tenés que saber sobre los perfiles certificados.',
         subtitulo: 'CALIDAD Y CUMPLIMIENTO: Invertí en la seguridad, durabilidad y valor de tus proyectos.',
@@ -57,7 +57,7 @@ const posts = [
     },
     {
         slug: "preguntas-frecuentes-sobre-las-nuevas-regulaciones-de-perfiles-de-acero",
-        img: '/images/Placeholder.png',
+        img: '/images/contenidos/preguntas-frecuentes-nueva-normativa.webp',
         categoria: 'Preguntas Frecuentes',
         titulo: 'Preguntas frecuentes sobre las nuevas regulaciones de perfiles de acero.',
         subtitulo: 'Resolvé tus dudas sobre la nueva normativa.',
