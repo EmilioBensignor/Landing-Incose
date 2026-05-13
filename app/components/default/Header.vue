@@ -2,7 +2,7 @@
     <header class="sticky top-0 z-50 bg-dark/70 shadow-md py-4 lg:py-8 px-5 md:px-12 lg:px-16 xxl:px-20">
         <div class="max-w-[1280px] flex justify-between items-center   mx-auto">
             <NuxtLink :to="ROUTE_NAMES.HOME">
-                <NuxtImg src="/images/Logo-Incose.svg" alt="Logo Incose"
+                <NuxtImg src="/images/Logo-Incose-Blanco.svg" alt="Logo Incose"
                     class="w-12 lg:w-20 h-11 lg:h-[4.75rem] object-contain" />
             </NuxtLink>
             <nav>

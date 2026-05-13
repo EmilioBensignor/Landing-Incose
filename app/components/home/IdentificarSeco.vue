@@ -1,13 +1,13 @@
 <template>
-    <DefaultSection id="identificar" class="bg-dark text-white py-16 lg:py-20 px-5 md:px-12 lg:px-16">
+    <DefaultSection id="identificarSeco" class="bg-dark text-white py-16 lg:py-20 px-5 md:px-12 lg:px-16">
         <div class="w-full max-w-[1280px] flex flex-col items-center gap-6 md:gap-12 xxl:gap-16 mx-auto">
             <div class="w-full flex flex-col gap-5 lg:gap-8 fade-up">
                 <HeadingH2 class="md:flex md:flex-col text-white">
                     ¿Cómo identificar un perfil certificado
-                    <span class="text-primary">para Steel Framing?</span>
+                    <span class="text-primary">para construcción en seco?</span>
                 </HeadingH2>
-                <p class="md:max-w-[37.5rem] lg:text-xl">
-                    Un perfil de acero certificado para Steel Framing debe incluir un grabado en su ala con información detallada de su
+                <p class="md:max-w-[38rem] lg:text-xl">
+                    Un perfil de acero certificado para construcción en seco debe incluir un grabado en su ala con información detallada de su
                     fabricación.
                 </p>
             </div>
@@ -36,10 +36,10 @@ useFadeUp();
 
 const caracteristicas = [
     'Nombre del fabricante',
-    'Designación del perfil y espesor de la chapa base',
-    'Z275 (Masa del galvanizado)',
+    'Designación del perfil',
+    'Espesor de chapa base en mm',
     'Código de trazabilidad',
-    'Certificación IRAM-IAS U 500-205',
+    'Certificación IRAM-IAS U 500-243',
     'Número de certificación del laboratorio (Opcional)',
 ]
 </script>
