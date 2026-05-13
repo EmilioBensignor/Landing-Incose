@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "landing-incose.vercel.app" }
+      ],
+      "destination": "https://certificacion-incose.com/:path*",
+      "permanent": true
+    }
+  ]
+}
